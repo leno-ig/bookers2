@@ -13,3 +13,27 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap";
+
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div.field,
+div.actions{
+  margin-bottom: 10px;
+}
+
+.flash-notice{
+  color: green;
+}
+.flash-alert{
+  color: red;
+}
+
+#error_explanation{
+  color: red;
+}

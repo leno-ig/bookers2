@@ -1,0 +1,13 @@
+<div class="container px-5 px-sm-0">
+  <%=render '/shared/errors', elem: @elem %>
+
+  <div class="row">
+    <div class="col-md-3">
+      <%=render '/shared/left_col', user: current_user, book: @elem %>
+    </div>
+
+    <div class="col-md-8 offset-md-1">
+      <%=render '/shared/books', list: @list %>
+    </div>
+  </div>
+</div>

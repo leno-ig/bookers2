@@ -42,9 +42,11 @@ class BooksController < ApplicationController
   end
 
   private
+
   def setup_elem
     @elem = current_user.books.build
   end
+
   def find_elem
     @elem = Book.find(params[:id])
   end

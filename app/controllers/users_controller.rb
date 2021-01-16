@@ -23,6 +23,7 @@ class UsersController < ApplicationController
   end
 
   private
+
   def find_elem
     @elem = User.find(params[:id])
   end
